@@ -43,7 +43,7 @@ A MQTT command receiver for Apache Flink, using MQTT.fx to perform test
     $ mosquitto_pub -m "ON" -t "home/living_room/TV"
     ```
     ***Since we use `mqtt.fx`, it is not necessary to use command to subscribe and push commands.***
-8. Open `mqtt.fx`, click the gear icon, connect to `localhost: 1883`, we choose 1883 because it does not need any authentication to connect. Then specify the `username`, `password`, `hostname`,`clientID` and `msgTopic` properties for object `MqttConfig`. 
+8. Open `mqtt.fx`, click the gear icon, connect to `localhost: 1883`, we choose 1883 because it does not need any authentication to connect. Then specify the `username`, `password`, `hostname`,`clientID` and `msgTopic` properties for object `MqttConfig` in line `24` in `MqttConsumer.java`
 
     *The values of `username`, `password`, `hostname` and `msgTopic` should be the **SAME** as those in `mqtt.fx` configuration, while `clientID` should be **DIFFERENT** with the one in `mqtt.fx`! Or you will get frequently kicked out whenever you try to connect to both clients.*
 
