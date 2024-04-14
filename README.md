@@ -47,4 +47,4 @@ A MQTT command receiver for Apache Flink, using MQTT.fx to perform test
 
     *The values of `username`, `password`, `hostname` and `msgTopic` should be the **SAME** as those in `mqtt.fx` configuration, while `clientID` should be **DIFFERENT** with the one in `mqtt.fx`! Or you will get frequently kicked out whenever you try to connect to both clients.*
 
-9. Start both `mqtt.fx` client and the java program, pushing notifications on `mqtt.fx` and you should be able to see the commands on the terminal where you run java program.
+9. Start both `mqtt.fx` client and the java program, pushing notifications on `mqtt.fx` and you should be able to see the commands on the terminal where you run Java program.
